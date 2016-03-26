@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GameTable - school timetable generator for gamers</title>
+		<script type='text/javascript' src="js/knockout-3.4.0.js"></script>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div id="step-one">
+			<h1>Step 1</h1>
+			<h3>Enter your timetable</h3>
+			<div class="timetable-editor" data-bind="foreach: weekdays">
+				<h4 data-bind="text: name"></h4>
+				<ul data-bind="foreach: classes">
+					<li><input data-bind="value: name"> <button data-bind="click: remove">Remove</button></li>
+				</ul>
+				<ul>
+					<li><input data-bind="value: newclass"> <button data-bind="click: addclass">Add</button></li>
+				</ul>
+			</div>
+			
+		</div>
+
+		<script type='text/javascript' src="js/main.js"></script>
+	</body>
+</html>
