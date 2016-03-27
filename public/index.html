@@ -9,7 +9,7 @@
 		<div id="step-one">
 			<h1>Step 1</h1>
 			<h3>Enter your timetable</h3>
-			<div class="timetable-editor" data-bind="foreach: weekdays">
+			<div id="timetable-editor" data-bind="foreach: weekdays">
 				<h4 data-bind="text: name"></h4>
 				<ul data-bind="foreach: classes">
 					<li><input data-bind="value: name"> <button data-bind="click: remove">Remove</button></li>

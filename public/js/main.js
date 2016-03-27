@@ -1,4 +1,3 @@
-var a;
 function Class(name, weekday) {
 	this.name = name;
 	this.remove = function() {
@@ -26,4 +25,4 @@ timetableViewModel = {
 	])
 }
 
-ko.applyBindings(timetableViewModel);
+ko.applyBindings(timetableViewModel, document.getElementById("timetable-editor");
