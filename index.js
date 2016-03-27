@@ -23,7 +23,6 @@ app.get('/games', apicache('1 hour'), function(req, res) {
 
 		steam_res.on('data', function(chunk) {
 			body += chunk;
-			console.log("got data" + new Date)
 		});
 
 		steam_res.on('end', function() {
