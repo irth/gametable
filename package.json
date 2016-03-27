@@ -9,6 +9,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "apicache": "0.0.12",
     "express": "^4.13.4",
     "jsdom": "^8.1.0"
   }

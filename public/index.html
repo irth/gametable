@@ -15,10 +15,16 @@
 					<li><input data-bind="value: name"> <button data-bind="click: remove">Remove</button></li>
 				</ul>
 				<ul>
-					<li><input data-bind="value: newclass"> <button data-bind="click: addclass">Add</button></li>
+					<li><input data-bind="value: newclass, valueUpdate: 'afterkeydown'"> <button data-bind="click: addclass, enable: newclass().length > 0">Add</button></li>
 				</ul>
 			</div>
-			
+		</div>
+		<div id="step-two">
+			<h1>Step 2</h1>
+			<h3>Choose the game</h3>
+			<div id="game-select">
+				<select data-bind="options: games, optionsText: 'name', value: chosenGame"></select>
+			</div>
 		</div>
 
 		<script type='text/javascript' src="js/main.js"></script>
