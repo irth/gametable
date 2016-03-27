@@ -26,6 +26,14 @@
 				<select data-bind="options: games, optionsText: 'name', value: chosenGame"></select>
 			</div>
 		</div>
+		<div id="step-three">
+			<h1>Step 3</h1>
+			<h3>Choose the background</h3>
+			<div id="background-select" data-bind="foreach: backgrounds">
+				<input type="radio" name="bg" data-bind="attr:{ id: 'bg-' + $index() }, checked: $parent.chosenBackground, checkedValue: $data">
+				<label data-bind="attr:{ for: 'bg-' + $index() }"><img data-bind="attr:{ src: miniature }"></label>
+			</div>
+		</div>
 
 		<script type='text/javascript' src="js/main.js"></script>
 	</body>
